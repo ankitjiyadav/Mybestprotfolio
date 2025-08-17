@@ -3,8 +3,8 @@ import React from "react";
 function About() {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
-        <h1 className="text-3xl font-bold mb-5">About</h1>
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16 text-white">
+        <h1 className="text-3xl font-bold mb-5 items-center">About</h1>
 
         <p>
           Hello, I am Ankit yadav, a passionate Web developer whith a keen eye
@@ -53,6 +53,8 @@ function About() {
         <h1 className="text-green-500 font-semibold text-xl">Certifications</h1>
         <br />
         <span>
+          Salesforce - Agentforce Specialist.
+        <br />
         Java Object-Oriented Programming.
         <br />
         CLA: Programming Essentials in C++ - CISCO NETWORK ACADEMY.

@@ -11,14 +11,14 @@ function Navbar() {
   const navItems = [
     { id: 1, text: "Home", href: "/" },
     { id: 2, text: "About", href: "/about" },
-    { id: 3, text: "Portfolio", href: "/portfolio" },
+    { id: 3, text: "Porject", href: "/portfolio" },
     { id: 4, text: "Experience", href: "/experience" },
     { id: 5, text: "Contact", href: "/contact" },
     { id: 6, text: "Resume", href: resumeUrl, external: true }, // Resume को अलग से सेट किया
   ];
 
   return (
-    <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 bg-white z-50">
+    <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 text-white bg-gray-900 z-50">
       <div className="flex justify-between items-center h-16">
         <div className="flex space-x-2">
           <img src={pic} className="h-12 w-12 rounded-full" alt="profile" />

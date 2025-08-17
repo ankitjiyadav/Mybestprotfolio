@@ -1,52 +1,63 @@
-import React from 'react'
+import React from 'react';
 
-function Contect() {
+function Contact() {
   return (
-    <>
-    <div className='max-w-screen-2lx container mx-auto px-4 md:px-20 my-16'>
-        <h1 className='text-3xl font-bold'> Contect Me </h1>
-        <br />
-        <span>Pleasen fill out the form below to contect me </span>
-
-        <div className='flex flex-col items-center justify-center mt-5'>
-            <form action="" className='bg-slate-200 w-80 px-8 py-6 rounded-xl'>
-                <h1 className="text-xl font-semibold mb-4">Send Your Message</h1>
-                <div>
-                    <label className="block text-gray-700">Full Name
-                        
-                    </label>
-                    <input className="shadow rounded-lg appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="nane"
-                    type="text" 
-                    placeholder='Enter Your fullname'
-                    />
-                </div>
-                <div>
-                    <label className="block text-gray-700">Enter Your Emaill
-                        
-                    </label>
-                    <input className="shadow rounded-lg appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="nane"
-                    type="text" 
-                    placeholder='Enter Your Email'
-                    />
-                </div>
-                <div>
-                    <label className="block text-gray-700">Message
-                        
-                    </label>
-                    <textarea className="shadow rounded-lg appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="nane"
-                    type="text" 
-                    placeholder='Type your message here'
-                    />
-                </div>
-                <button className='bg-black text-white rounded-xl px-3 py-2 hover:bg-slate-700 duration-300'>Send</button>
-            </form>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-slate-800 flex items-center justify-center px-4 py-16">
+      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+        <div className="mb-6 text-center">
+          <h1 className="text-3xl font-bold text-gray-800">Contact Me</h1>
+          <p className="text-gray-600 mt-2">Please fill out the form below to get in touch</p>
         </div>
+
+        <form>
+          <div className="mb-4">
+            <label className="block text-sm font-semibold text-gray-700 mb-1" htmlFor="name">
+              Full Name
+            </label>
+            <input
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
+              id="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-sm font-semibold text-gray-700 mb-1" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-semibold text-gray-700 mb-1" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
     </div>
-    </>
-  )
+  );
 }
 
-export default Contect
+export default Contact;
